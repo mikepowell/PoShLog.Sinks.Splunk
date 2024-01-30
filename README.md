@@ -16,7 +16,7 @@ If you are familiar with PowerShell, skip to [Installation](#installation) secti
 
 ### Installation
 
-To install PoShLog.Sinks.Splunk, run following snippet from owershell
+To install PoShLog.Sinks.Splunk, run following snippet from PowerShell
 
 ```ps1
 Install-Module -Name PoShLog.Sinks.Splunk
