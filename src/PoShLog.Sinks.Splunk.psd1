@@ -12,7 +12,7 @@
 RootModule = 'PoShLog.Sinks.Splunk.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.2'
+ModuleVersion = '1.0.3'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -31,7 +31,7 @@ Copyright = '(c) 2019 Mike Powell. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'PoShLog.Sinks.Splunk is an extension module for the PoShLog core library - https://www.powershellgallery.com/packages/PoShLog.
-It contains sink that publishes log messages to a Splunk HTTP Event Collector.
+It contains sink that publishes log messages to a Splunk HTTP Event Collector, and wraps the Serilog.Sinks.Splunk dotnet sink.
 
 For documentation check PoShLog wiki - https://github.com/PoShLog/PoShLog/wiki'
 

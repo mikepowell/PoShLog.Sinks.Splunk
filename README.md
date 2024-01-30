@@ -4,8 +4,11 @@
 [![PowerShell Gallery](https://img.shields.io/powershellgallery/p/poshlog.sinks.Splunk?color=blue)](https://www.powershellgallery.com/packages/poshlog.sinks.Splunk)
 [![psgallery](https://img.shields.io/powershellgallery/dt/PoShLog.Sinks.Splunk.svg)](https://www.powershellgallery.com/packages/PoShLog.Sinks.Splunk)
 
-**PoShLog.Sinks.Splunk** is extension module for the [PoShLog](https://github.com/PoShLog/PoShLog) logging module. Contains sink that publishes log messages to a
+**PoShLog.Sinks.Splunk** is extension module for the [PoShLog](https://github.com/PoShLog/PoShLog) logging module.
+It contains a sink that publishes log messages to a
 [Splunk HTTP Event Collector](https://docs.splunk.com/Documentation/Splunk/9.1.3/Data/UsetheHTTPEventCollector).
+
+Core functionality is provided by the [Serilog.Sinks.Splunk](https://github.com/serilog-contrib/serilog-sinks-splunk) package.
 
 ## Getting started
 
