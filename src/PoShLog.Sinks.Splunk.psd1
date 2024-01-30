@@ -12,7 +12,7 @@
 RootModule = 'PoShLog.Sinks.Splunk.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '1.0.2'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -30,8 +30,8 @@ CompanyName = 'Mike Powell'
 Copyright = '(c) 2019 Mike Powell. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'PoShLog.Sinks.Splunk is extension module for PoShLog core library - https://www.powershellgallery.com/packages/PoShLog.
-It contains sink that publishes log messages to TODO
+Description = 'PoShLog.Sinks.Splunk is an extension module for the PoShLog core library - https://www.powershellgallery.com/packages/PoShLog.
+It contains sink that publishes log messages to a Splunk HTTP Event Collector.
 
 For documentation check PoShLog wiki - https://github.com/PoShLog/PoShLog/wiki'
 
@@ -101,16 +101,16 @@ PrivateData = @{
         Tags = 'Log','Logging','Serilog','File','filelog','logfile','error-log','console','event','serilog-sink','serilog-for-powershell','wrapper','sinks','PSEdition_Desktop','PSEdition_Core','Windows','Linux','MacOS'
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://raw.githubusercontent.com/mikepowell/PoShLog.Sinks.Splunk/main/LICENSE'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/mikepowell/PoShLog.Sinks.Splunk'
 
         # A URL to an icon representing this module.
         IconUri = 'https://raw.githubusercontent.com/PoShLog/PoShLog/master/images/icons/poshlog-icon-sink-256.png'
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Update readme'
+        ReleaseNotes = 'Update PSD info'
 
         # Prerelease string of this module
         # Prerelease = ''
