@@ -110,7 +110,7 @@ PrivateData = @{
         IconUri = 'https://raw.githubusercontent.com/PoShLog/PoShLog/master/images/icons/poshlog-icon-sink-256.png'
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Update PSD info'
+        ReleaseNotes = 'Updated PSD info'
 
         # Prerelease string of this module
         # Prerelease = ''
