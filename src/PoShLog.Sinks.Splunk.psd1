@@ -12,7 +12,7 @@
 RootModule = 'PoShLog.Sinks.Splunk.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.3'
+ModuleVersion = '1.0.4'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -27,7 +27,7 @@ Author = 'Mike Powell'
 CompanyName = 'Mike Powell'
 
 # Copyright statement for this module
-Copyright = '(c) 2019 Mike Powell. All rights reserved.'
+Copyright = '(c) 2024 Mike Powell. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'PoShLog.Sinks.Splunk is an extension module for the PoShLog core library - https://www.powershellgallery.com/packages/PoShLog.
