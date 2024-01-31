@@ -35,8 +35,27 @@ task Test {
 }
 
 task BuildDependencies {
-	Import-Module PoShLog.Tools
-	Build-Dependencies '.\Dependencies.csproj' -ModuleDirectory $PSScriptRoot -IsExtensionModule
+	$csProjPath = '.\Dependencies.csproj'
+	$projectRoot = Split-Path $csProjPath -Parent
+
+	$libsDirectory = '.\lib'
+	New-Item -Path $libsDirectory -ItemType Directory -Force | Out-Null
+
+	$projectName = (Get-Item $csProjPath).BaseName
+
+	dotnet publish -c Release $csProjPath -o $libsDirectory --verbosity 'm'
+
+	# Remove unecessary files
+	Remove-Item "$libsDirectory\*.json" -Force -ErrorAction SilentlyContinue
+	Remove-Item "$libsDirectory\*.pdb" -Force -ErrorAction SilentlyContinue
+	Remove-Item "$libsDirectory\System.Management.Automation.dll" -Force -ErrorAction SilentlyContinue
+
+	Remove-Item "$libsDirectory\Serilog.dll" -Force -ErrorAction SilentlyContinue
+	Remove-Item "$libsDirectory\Dependencies.dll" -Force -ErrorAction SilentlyContinue
+
+	Get-ChildItem $libsDirectory | Where-Object { $_.Name -like "*$projectName*" } | Remove-Item -Force
+
+	Remove-Item -Path @("$projectRoot\bin", "$projectRoot\obj") -Recurse -Force
 }
 
 task UpdateManifest {
